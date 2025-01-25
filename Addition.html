@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Addition Of two Numbers</title>
+        <script>
+            function a(){
+            var a= document.getElementById("t1");
+            var b= document.getElementById("t2");
+            var c= document.getElementById("r1");
+                c.value= parseInt(a.value)+parseInt(b.value);
+            }
+        </script>
+    </head>
+    <body>
+        Enter 1st Number: <input type="text" id="t1"> <br>
+        Enter 2nd Number: <input type="text" id="t2"> <br>
+        <input type="button" value="Addition" onclick="a()"> <br>
+        Result of Addition: <input type="text" id="r1"> <br>
+    </body>
+</html>

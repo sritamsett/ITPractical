@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Larger among three numbers</title>
+        <script>
+            function f(){
+                var a= document.getElementById("t1");
+                var b= document.getElementById("t2");
+                var c= document.getElementById("t3");
+                
+                var e= parseInt(a.value);
+                var f= parseInt(b.value);
+                var g= parseInt(c.value);
+
+                if(e>f){
+                    if(e>g){
+                        document.write("Largest is:" + e);
+                    }
+                    else{document.write("Largest is:" +g)}
+                }
+                else{
+                    if(f>=g){
+                        document.write("Largest is:" +f);
+                    }
+                    else{
+                        document.write("Largest is:" +g)
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Enter 1st number: <input type="text" id="t1">
+        Enter 2nd number: <input type="text" id="t2">
+        Enter 3rd number: <input type="text" id="t3">
+        <input type="button" value="Click" onclick="f()">
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Temparature Conversion</title>
+        <script>
+            function f(){
+                var a= parseFloat(document.getElementById("t1").value);
+                var fahrenheit = document.getElementById("r1");
+                fahrenheit.value = ((9.0/5.0)*a)+32.0; 
+            }
+            function c(){
+                var b= parseFloat(document.getElementById("t1").value);
+                var celsius = document.getElementById("r2");
+                celsius.value = (b-32.0)*(5.0/9.0); 
+            }
+        </script>
+    </head>
+    <body>
+        Enter degree:
+        <input type="text" id="t1"><br>
+        <input type="button" value="Convert to Celsius" onclick="c()">
+        <input type="button" value="Convert to Fahrenheit" onclick="f()"><br>
+        Result of Celcius:
+        <input type="text" id="r2"><br>
+        Result of Fahrenheit:
+        <input type="text" id="r1">
+    </body>
+</html>
