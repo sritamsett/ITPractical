@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Current Day Time</title>
+    </head>
+    <body>
+        <script>
+            var d= new Date();
+            var a= d.getDay();
+            if(a==0){
+            var b="Sunday";
+            }
+            if(a==1){
+            var b="Monday";
+            }
+            if(a==2){
+            var b="Tuesday";
+            }
+            if(a==3){
+            var b="Wednesday";
+            }
+            if(a==4){
+            var b="Thursday";
+            }
+            if(a==5){
+            var b="Friday";
+            }
+            if(a==6){
+            var b="Saturday";
+            }
+            alert("Today is: " +b + " Current Time is: " +d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds());
+        </script>
+    </body>
+</html>

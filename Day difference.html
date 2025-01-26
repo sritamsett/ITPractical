@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Day difference</title>
+        <script>
+            function difference(){
+                var d1= document.getElementById("d1");
+                var d2= document.getElementById("d2");
+                var diff = (d1.valueAsDate - d2.valueAsDate) / (1000*3600*24);
+                if (diff>= 0){
+                    document.write("Day difference is:" + diff + "days");
+                }
+                else {
+                    document.write("Day difference is: "+ (diff*(-1)) + "days");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Enter First date:
+        <input type="date" id="d1"><br>
+        Enter Second date:
+        <input type="date" id="d2"><br>
+        <input type="button" value="Check Difference" onclick="difference()">
+    </body>
+</html>
+
