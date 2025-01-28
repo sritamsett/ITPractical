@@ -1,0 +1,93 @@
+<html>
+	<head>
+	<title>My First Java Script Program</title>
+	<script>
+		function login() 
+		{
+			var a=document.getElementById("t1");
+			var b=document.getElementById("t2");
+			if(a.value=="Sritam" && b.value=="Sett")
+			{
+				alert("Sucessful");
+			}
+			else{
+				alert("Unsucessful");
+			}
+						
+		}
+		function reset()
+		{
+			var a=document.getElementById("t1");
+			var b=document.getElementById("t2");
+			a.value="";
+			b.value="";
+		}
+		function f1()
+		{
+			var a=document.getElementById("t1");
+			var b=document.getElementById("t2");
+			var c=document.getElementById("t3");
+			var d=a.value;
+			var e=b.value;
+			c.value=d.concat(e);
+		}
+		function f2()
+		{
+			var a=document.getElementById("t1");
+			var b=document.getElementById("t2");
+			var c=document.getElementById("t3");
+			var f=document.getElementById("t4");
+			var d=a.value;
+			var e=b.value;
+			c.value=d.charAt(f.value);
+		}
+		function f3()
+		{
+			var a=document.getElementById("t1");
+			var b=document.getElementById("t2");
+			var c=document.getElementById("t3");
+			var f=document.getElementById("t4");
+			var d=a.value;
+			var e=b.value;
+			c.value=d.indexOf(f.value);
+		}
+		function f4()
+		{
+			var a=document.getElementById("t1");
+			var b=document.getElementById("t2");
+			var c=document.getElementById("t3");
+			var f=document.getElementById("t4");
+			var d=a.value;
+			var e=b.value;
+			c.value=d.lastIndexOf(f.value);
+		}	
+	</script>
+	</head>
+	<body bgcolor = "d2b4de">
+		<center>
+		<b>Enter Username</b>
+		<input type= "text" id="t1" placeholder="Enter Username">
+		<br>
+		<b>Enter Password</b>
+		<input type= "password" id="t2" placeholder="Enter Password">
+		<br>
+		<input type= "button" value="Login" onClick = "login()">
+		&nbsp&nbsp
+		<input type= "button" value="Reset" onClick = "reset()">
+		&nbsp&nbsp
+		<input type= "button" value="Concat" onClick = "f1()">
+		&nbsp&nbsp
+		<input type= "button" value="CharAt" onClick = "f2()">
+		&nbsp&nbsp
+		<input type= "button" value="IndexOf" onClick = "f3()">
+		&nbsp&nbsp
+		<input type= "button" value="LastIndexOf" onClick = "f4()">
+		<br>
+		<b>Result</b>
+		<input type= "text" id="t3">
+		<b>Enter Find value</b>
+		<input type= "text" id="t4">
+		</center>	
+	</body>
+	
+</html>
