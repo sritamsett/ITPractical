@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Expression Calculation</title>
+        <script>
+            function f(){
+                var b=parseInt(document.getElementById("t1").value);
+                var a=parseInt(document.getElementById("t2").value);
+                var c=parseInt(document.getElementById("t3").value);
+                var d= (-b+((b**2 - 4*a*c)**0.5)/2*a);
+                document.write("The result is: "+d);
+            }
+        </script>
+    </head>
+    <body>
+        Enter the value of b:
+        <input type="text" id="t1"><br>
+        Enter the value of a:
+        <input type="text" id="t2"><br>
+        Enter the value of c:
+        <input type="text" id="t3"><br>
+        <input type="button" value="Calculate" onclick="f()">
+    </body>
+</html>

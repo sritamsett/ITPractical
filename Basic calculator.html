@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Basic Calculator</title>
+        <script>
+            function sum(){
+                var a = parseInt(document.getElementById("t1").value);
+                var b = parseInt(document.getElementById("t2").value);
+                var c= a+b;
+                document.write("Sum is: "+c);
+            }
+            function sub(){
+                var a = parseInt(document.getElementById("t1").value);
+                var b = parseInt(document.getElementById("t2").value);
+                var c= a-b;
+                document.write("Subtraction is: "+c);
+            }
+            function mul(){
+                var a = parseInt(document.getElementById("t1").value);
+                var b = parseInt(document.getElementById("t2").value);
+                var c= a*b;
+                document.write("Multiplication is: "+c);
+            }
+            function div(){
+                var a = parseInt(document.getElementById("t1").value);
+                var b = parseInt(document.getElementById("t2").value);
+                var c= a/b;
+                document.write("Division is: "+c);
+            }
+            function mod(){
+                var a = parseInt(document.getElementById("t1").value);
+                var b = parseInt(document.getElementById("t2").value);
+                var c= a%b;
+                document.write("Mod value is: "+c);
+            }
+            function p(){
+                var a = parseInt(document.getElementById("t1").value);
+                var b = parseInt(document.getElementById("t2").value);
+                var c= Math.pow(a,b);
+                document.write("Calculation of power is: "+c);
+            }
+        </script>
+    </head>
+    <body>
+        Enter 1st number:
+        <input type="text" id="t1"><br>
+        Enter 2nd number:
+        <input type="text" id="t2"><br>
+        <input type="button" value="Sum" onclick="sum()"><br>
+        <input type="button" value="Subtraction" onclick="sub()"><br>
+        <input type="button" value="Multiplication" onclick="mul()"><br>
+        <input type="button" value="Division" onclick="div()"><br>
+        <input type="button" value="Power" onclick="p()"><br>
+        <input type="button" value="Modulas" onclick="mod()"><br>
+    </body>
+</html>

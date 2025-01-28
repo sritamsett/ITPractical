@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Admission form design</title>
+        <script>
+            function validate(){
+                const user= document.getElementById("user").value;
+                const userRegex= (/^[A-Za-z]+$/);
+                if(!userRegex.test(user)){
+                    alert("Username contains alphabet only");
+                    return false;
+                }
+                const email= document.getElementById("email").value;
+                const emailRegex= (/^[a-z]([a-z]|[0-9])*@[a-z]+\.([a-z])+$/);
+                if(!emailRegex.test(email)){
+                    alert("Check the valid format of email");
+                    return false;
+                }
+                const pass= document.getElementById("pass").value;
+                const passRegex= (/^(?=.*[A-z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/);
+                if(!passRegex.test(pass)){
+                    alert("Password containts atleast one uppercase, lowercase alphabet, one number , one special character and length must be greater than 8");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form action="Action.html" onsubmit="return validate()">
+            Enter Username:
+            <input type="text" id="user"><br>
+            Enter Email:
+            <input type="text" id="email"><br>
+            Enter Password:
+            <input type="text" id="pass"><br>
+            <input type="submit" value="Submit Form">
+        </form>
+    </body>
+</html>

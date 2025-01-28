@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Simple interest</title>
+        <script>
+            function f(){
+                var p=parseInt(document.getElementById("t1").value);
+                var r=parseInt(document.getElementById("t2").value);
+                var t=parseInt(document.getElementById("t3").value);
+                var i = (p*t*r)/100;
+                document.write("Simple interest is: "+i);
+            }
+        </script>
+    </head>
+    <body>
+        Enter Capital Amount:
+        <input type="text" id="t1"><br>
+        Enter Rate of interest:
+        <input type="text" id="t2"><br>
+        Enter Time in Years:
+        <input type="text" id="t3"><br>
+        <input type="button" value="Interest calculate" onclick="f()">
+    </body>
+</html>

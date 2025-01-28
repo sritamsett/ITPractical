@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Date Validation</title>
+        <script>
+            function validation(){
+                var dd = parseInt(document.getElementById("dd").value);
+                var mm = parseInt(document.getElementById("mm").value);
+                var yy = parseInt(document.getElementById("yy").value);
+                var a= [[0,31,28,31,30,31,30,31,31,30,31,30,31],[0,31,29,31,30,31,30,31,31,30,31,30,31]];
+                var i,j= mm;
+                if(yy>0 && mm>=1 && mm<=12 && dd>=1){
+                    if((yy%100 == 0 && yy%400 == 0) || (yy%100 != 0 && yy%4 == 0))
+                    i=1;
+                    else
+                    i=0;
+                if(dd <= a[i][j])
+                    document.write("Valid date");
+                else
+                    document.write("Invalid Date");
+                }
+                else
+                document.write("Invalid Date");
+            }
+        </script>
+    </head>
+    <body>
+        Enter Day:
+        <input type="text" id="dd"><br>
+        Enter Month:
+        <input type="text" id="mm"><br>
+        Enter Year:
+        <input type="text" id="yy"><br>
+        <input type="button" value="Valid" onclick="validation()">
+    </body>
+</html>
