@@ -1,15 +1,17 @@
 <html>
-    <head>
-        <title>Second</title>
-    </head>
-    <body>
-        <script>
-            var a = prompt("Enter Second");
-            var d = new Date(a*1000);
-            var h = d.getHours();
-            var m= d.getMinutes();
-            var s= d.getSeconds();
-            documnet.write(h+" hours "+m+" minutes "+s+" seconds");
-        </script>
-    </body>
+	<head>
+	<title>Second</title>
+	</head>
+	<body>
+		<script>
+			var a=prompt("Enter Second: ");
+			var d=parseInt(a);
+			var min=parseInt(d/60)%60;
+			var hour=parseInt(d/3600);
+			var g=parseInt(d%60);
+			document.write("Hour: "+hour+"<br>");
+			document.write("Minute: "+min+"<br>");
+			document.write("Second: "+g);
+		</script>
+	</body>
 </html>
